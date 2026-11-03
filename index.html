@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | CampusVibe</title>
+<meta name="description" content="CampusVibe - Discover. Participate. Celebrate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header id="nav"></header>
+<main>
+<section class="hero"><div class="container"><div class="row align-items-center g-5">
+ <div class="col-lg-7 rise">
+  <p class="tag mb-2">Discover. Participate. Celebrate.</p>
+  <h1>Make Every Moment an Event.</h1>
+  <p class="lead my-4">One portal for every hackathon, fest, workshop and match on campus. Browse events, register in seconds and keep track of everything you have joined.</p>
+  <div class="d-flex flex-wrap gap-3 mb-5"><a class="btn btn-cv btn-lg" href="events.html">Explore Events</a><a class="btn btn-cv-outline btn-lg" href="register.html">Join CampusVibe</a></div>
+  <div class="row g-4" style="max-width:460px">
+   <div class="col-4 stat"><b data-count="11">0</b><span>Events</span></div>
+   <div class="col-4 stat"><b data-count="8">0</b><span>Clubs</span></div>
+   <div class="col-4 stat"><b data-count="2400" data-suffix="+">0</b><span>Participants</span></div>
+  </div>
+ </div>
+ <div class="col-lg-5"><div class="next-card">
+  <small class="text-uppercase" style="color:var(--lav)">Next on campus</small>
+  <h2 class="h3 mt-2" id="nextTitle">Loading...</h2><p class="mb-0" style="color:#c9cdea" id="nextMeta"></p>
+  <div class="cd" id="countdown"></div><a class="btn btn-cv w-100" id="nextLink" href="events.html">View Details</a>
+ </div></div>
+</div></div></section>
+
+<section class="section"><div class="container">
+ <h2 class="fw-bold">Browse by category</h2><p class="section-sub mb-4">Find something that matches your interest.</p>
+ <div class="row g-4">
+  <div class="col-6 col-lg-3"><a class="cat-card" href="events.html?cat=Technical"><div class="ico">💻</div><h3 class="h5">Technical</h3><p class="small mb-0">Hackathons, expos and pitch days.</p></a></div>
+  <div class="col-6 col-lg-3"><a class="cat-card" href="events.html?cat=Cultural"><div class="ico">🎭</div><h3 class="h5">Cultural</h3><p class="small mb-0">Music, dance, drama and art.</p></a></div>
+  <div class="col-6 col-lg-3"><a class="cat-card" href="events.html?cat=Sports"><div class="ico">🏏</div><h3 class="h5">Sports</h3><p class="small mb-0">Tournaments and annual meets.</p></a></div>
+  <div class="col-6 col-lg-3"><a class="cat-card" href="events.html?cat=Workshops"><div class="ico">🛠️</div><h3 class="h5">Workshops</h3><p class="small mb-0">Hands-on skill sessions.</p></a></div>
+ </div>
+</div></section>
+
+<section class="section pt-0"><div class="container">
+ <div class="d-flex justify-content-between align-items-end mb-4"><div><h2 class="fw-bold mb-1">Featured events</h2><p class="section-sub mb-0">Do not miss these highlights.</p></div><a href="events.html">View all</a></div>
+ <div class="row g-4" id="featured"></div>
+</div></section>
+
+<section class="section pt-0"><div class="container"><div class="row g-5">
+ <div class="col-lg-6"><h2 class="fw-bold">Upcoming events</h2><p class="section-sub">The next five dates in the calendar.</p>
+  <ol class="list-group list-group-numbered" id="upcoming"></ol></div>
+ <div class="col-lg-6"><div class="cta h-100 d-flex flex-column justify-content-center">
+  <h2 class="fw-bold">Ready to take part?</h2><p style="color:#dcd8f3">Create your student account and register for events in a few clicks.</p>
+  <div><a class="btn btn-light btn-lg fw-semibold" href="register.html">Register as a student</a></div></div></div>
+</div></div></section>
+</main>
+<footer id="footer"></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
